@@ -1,7 +1,7 @@
 restful-wrap
 =======
 
-[![Build Status](https://secure.travis-ci.org/fengmk2/restful-wrap.png)](http://travis-ci.org/fengmk2/restful-wrap) [![Coverage Status](https://coveralls.io/repos/fengmk2/restful-wrap/badge.png)](https://coveralls.io/r/fengmk2/restful-wrap) [![Build Status](https://drone.io/github.com/fengmk2/restful-wrap/status.png)](https://drone.io/github.com/fengmk2/restful-wrap/latest)
+[![Build Status](https://secure.travis-ci.org/fengmk2/restful-wrap.png)](http://travis-ci.org/fengmk2/restful-wrap) [![Coverage Status](https://coveralls.io/repos/fengmk2/restful-wrap/badge.png)](https://coveralls.io/r/fengmk2/restful-wrap)
 
 [![NPM](https://nodei.co/npm/restful-wrap.png?downloads=true&stars=true)](https://nodei.co/npm/restful-wrap/)
 
