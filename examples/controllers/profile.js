@@ -20,7 +20,7 @@ exports.show = function (params, callback) {
     if (params.uid === '404') {
       return callback({status: 404, message: 'User ' + params.uid + ' Not Found'});
     }
-    callback(null, {name: 'foo', params: params}, {use: 200});
+    callback(null, {name: 'foo', params: {uid: params.uid, token: params.token}}, {use: 200});
   }, 200);
 };
 

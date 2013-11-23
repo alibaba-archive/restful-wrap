@@ -1,6 +1,6 @@
 {
   "name": "restful-wrap",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "restful controllers wrap, only use on connect",
   "main": "index.js",
   "scripts": {
