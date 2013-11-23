@@ -17,7 +17,7 @@ $ npm install restful-wrap
 
 ## Usage
 
-Please see [/examples]() for details.
+Please see [/examples](https://github.com/fengmk2/restful-wrap/tree/master/examples) for details.
 
 ## License
 
