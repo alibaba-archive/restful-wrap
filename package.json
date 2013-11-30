@@ -16,7 +16,7 @@
     }
   },
   "dependencies": {
-
+    "var-style": "~0.0.1"
   },
   "devDependencies": {
     "supertest": "*",

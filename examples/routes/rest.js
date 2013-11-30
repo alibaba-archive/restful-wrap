@@ -17,7 +17,9 @@ var restAuth = require('../controllers/rest_auth');
 var config = require('../config');
 
 function restRoutes(app) {
-  var api = restfulWrap(app, restAuth);
+  var api = restfulWrap(app, restAuth, {
+    transformation: true
+  });
 
   /**
    * Profile
