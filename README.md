@@ -19,6 +19,21 @@ $ npm install restful-wrap
 
 Please see [/examples](https://github.com/fengmk2/restful-wrap/tree/master/examples) for details.
 
+## Authors
+
+```bash
+$ git summary
+
+ project  : restful-wrap
+ repo age : 8 days
+ active   : 3 days
+ commits  : 7
+ files    : 22
+ authors  :
+     5  fengmk2                 71.4%
+     2  dead_horse              28.6%
+```
+
 ## License
 
 (The MIT License)
