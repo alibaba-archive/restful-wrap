@@ -15,9 +15,13 @@ var restfulWrap = require('../../');
 var profile = require('../controllers/profile');
 var restAuth = require('../controllers/rest_auth');
 var config = require('../config');
+var transformer = require('var-style');
 
 function restRoutes(app) {
-  var api = restfulWrap(app, restAuth);
+  var api = restfulWrap(app, restAuth, {
+    inputTransformer: transformer.snakeToCamel,
+    outputTransformer: transformer.camelToSnake
+  });
 
   /**
    * Profile

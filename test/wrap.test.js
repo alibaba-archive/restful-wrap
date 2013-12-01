@@ -25,10 +25,17 @@ describe('wrap.test.js', function () {
   it('should throw error when handle is not function', function () {
     (function () {
       urlrouter(function (app) {
-        var api = restfulWrap(app, function () {});
+        var api = restfulWrap(app);
         api.get('/foo');
       });
     }).should.throw('app.get("/foo", undefined) `handle` should be function');
+  });
+
+  it('should handle without auth function ok', function () {
+    urlrouter(function (app) {
+      var api = restfulWrap(app);
+      api.get('/foo', function () {});
+    });
   });
 
   it('should get / status 200', function (done) {
