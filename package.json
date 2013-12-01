@@ -16,7 +16,6 @@
     }
   },
   "dependencies": {
-    "var-style": "~0.0.1"
   },
   "devDependencies": {
     "supertest": "*",
@@ -27,7 +26,8 @@
     "travis-cov": "*",
     "coveralls": "*",
     "mocha-lcov-reporter": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "var-style": "*"
   },
   "homepage": "https://github.com/fengmk2/restful-wrap",
   "repository": {
