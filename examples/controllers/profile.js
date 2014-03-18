@@ -35,3 +35,9 @@ exports.update = function (params, callback) {
     callback();
   }, 200);
 };
+
+exports.mirror = function (params, callback) {
+  setTimeout(function () {
+    callback(null, params);
+  }, 200);
+};

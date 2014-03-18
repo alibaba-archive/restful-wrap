@@ -15,18 +15,17 @@
       "threshold": 94
     }
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "supertest": "*",
-    "urlrouter": "*",
-    "connect": "*",
-    "should": "*",
     "blanket": "*",
-    "travis-cov": "*",
+    "connect": "*",
     "coveralls": "*",
-    "mocha-lcov-reporter": "*",
     "mocha": "*",
+    "mocha-lcov-reporter": "*",
+    "should": "*",
+    "supertest": "*",
+    "travis-cov": "*",
+    "urlrouter": "*",
     "var-style": "*"
   },
   "homepage": "https://github.com/fengmk2/restful-wrap",
@@ -40,7 +39,10 @@
     "email": "fengmk2@gmail.com"
   },
   "keywords": [
-    "restful-wrap", "restful", "urlrouter", "connect"
+    "restful-wrap",
+    "restful",
+    "urlrouter",
+    "connect"
   ],
   "engines": {
     "node": ">= 0.8.0"

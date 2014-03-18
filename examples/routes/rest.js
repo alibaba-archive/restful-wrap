@@ -31,7 +31,23 @@ function restRoutes(app) {
    */
   api.get('/users/:uid', profile.show);
   api.post('/users/:uid', profile.update);
-};
+
+
+  function addFoo(req, res, next) {
+    req.query.foo = 'bar';
+    next();
+  }
+
+  function addHello(req, res, next) {
+    req.query.hello = 'world';
+    next();
+  }
+
+  /**
+   * mirror
+   */
+  api.get('/mirror', addFoo, addHello, profile.mirror);
+}
 
 restRoutes.notFound = restfulWrap.notFound();
 restRoutes.error = restfulWrap.error(config);

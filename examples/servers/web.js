@@ -29,4 +29,8 @@ app.use('/', function (req, res) {
   res.end('hello world');
 });
 
+if (!module.parent) {
+  app.listen(7001);
+  console.log('web server start listen at 7001');
+}
 module.exports = app;
