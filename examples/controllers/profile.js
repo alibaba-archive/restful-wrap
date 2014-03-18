@@ -38,6 +38,10 @@ exports.update = function (params, callback) {
 
 exports.mirror = function (params, callback) {
   setTimeout(function () {
-    callback(null, params);
+    var o = {};
+    for (var k in params) {
+      o[k] = params[k];
+    }
+    callback(null, o);
   }, 200);
 };

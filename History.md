@@ -1,4 +1,9 @@
 
+0.0.3 / 2014-03-18 
+==================
+
+  * add common(req, res, next) middleware support (@dead-horse)
+
 0.0.2 / 2013-12-01 
 ==================
 
