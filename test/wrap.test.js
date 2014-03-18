@@ -22,13 +22,22 @@ describe('wrap.test.js', function () {
     app.listen(0, done);
   });
 
-  it('should throw error when handle is not function', function () {
+  it('should throw error when arguments.length < 2', function () {
     (function () {
       urlrouter(function (app) {
         var api = restfulWrap(app);
         api.get('/foo');
       });
-    }).should.throw('app.get("/foo", undefined) `handle` should be function');
+    }).should.throw('app.get need more than one argument');
+  });
+
+  it('should throw error when handle is not function', function () {
+    (function () {
+      urlrouter(function (app) {
+        var api = restfulWrap(app);
+        api.get('/foo', {});
+      });
+    }).should.throw('app.get("/foo", [object Object]) `handle` should be function');
   });
 
   it('should handle without auth function ok', function () {
@@ -134,5 +143,17 @@ describe('wrap.test.js', function () {
       params: {foo: 'bar'}
     })
     .expect(500, done);
+  });
+
+  it('should middlewares work ok', function (done) {
+    request(app)
+    .get('/v1/mirror?token=dev')
+    .expect('Content-Type', 'application/json; charset=utf-8')
+    .expect({
+      token: 'dev',
+      foo: 'bar',
+      hello: 'world'
+    })
+    .expect(200, done);
   });
 });
